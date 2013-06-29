@@ -1,0 +1,274 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Bootstrap Custom Theme Styles
+===================================================*/
+
+/* Body and structure
+-------------------------------------------------- */
+
+body {
+    padding-top: 100px;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+    background: #FFBF3F; /* original #b3d4fc */
+    text-shadow: none;
+}
+::selection {
+    background: #FFBF3F; /* original #b3d4fc */
+    text-shadow: none;
+}
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Allow only vertical resizing of textareas */
+textarea {
+    resize: vertical;
+}
+
+.divider {
+    height: 30px;
+    border-top:    10px solid #000;
+    border-bottom: 10px solid #000;
+    background: url(../img/div-pat.png) repeat-x transparent;
+}
+
+/* Chrome Frame prompt */
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* Navbar
+-------------------------------------------------- */
+
+@logoWidth: 225px;
+@logoHeight: 65px;
+
+.navbar {
+    .container {
+        width: @logoWidth;
+    }
+    &-fixed-top .brand {
+        padding: 17.5px 0;
+
+        img {
+            width: @logoWidth;
+            height: @logoHeight;
+        }
+    }
+}
+
+
+/* Brand
+-------------------------------------------------- */
+
+
+
+
+/* Sections
+-------------------------------------------------- */
+
+section {
+    .container {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 74px;
+        line-height: 1;
+        margin-bottom: 40px;
+    }
+
+    &.inverted {
+        h1, h2, h3, p {
+            color: #FFF;
+        }
+    }
+}
+
+#intro {
+    padding: 200px 0;
+
+    h1, p {
+        margin-bottom: 30px;
+    }
+
+    .btn-anchor .icon-white.right {
+        margin: 5px 0 0 8px;
+    }
+}
+
+#about {
+    #bio {
+        background-color: #006C81;
+        padding: 125px 0;
+    }
+    #skills {
+        background-color: #15859B;
+        padding: 125px 0;
+    }
+}
+
+#portfolio {
+    background-color: #FE8315;
+    padding: 150px 0;
+
+    /*
+    .container {
+        width: 910px;
+    }
+    */
+
+    img {
+        border: 10px solid #FFFFFF;
+        margin: 20px;
+    }
+}
+
+#contact {
+    background-color: #FA3113;
+    padding: 150px 0;
+}
+
+
+/* Footer
+-------------------------------------------------- */
+
+
+
+
+/* Helper classes
+-------------------------------------------------- */
+
+/* Image replacement */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable
+   when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+/* Clearfix: contain floats */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* For IE 6/7 only
+   Include this rule to trigger hasLayout and contain floats. */
+.clearfix {
+    *zoom: 1;
+}
+
+.flt-lt-top { float: left; margin: 8px 20px 20px 0; }
+.flt-lt-mdl { float: left; margin: 20px 20px 20px 0; }
+.flt-lt-btm { float: left; margin: 20px 20px 8px 0; }
+
+.flt-rt-top { float: right; margin: 8px 0 20px 20px; }
+.flt-rt-mdl { float: right; margin: 20px 0 20px 20px; }
+.flt-rt-btm { float: right; margin: 20px 0 8px 20px; }
+
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+@media (min-width: 1200px) {
+    
+}
+
+/* Desktop
+------------------------- */
+@media (max-width: 979px) {
+	
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+    
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+    
+}
+
+/* Portrait phones
+------------------------- */
+@media (max-width: 320px) {
+	
+}

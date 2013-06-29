@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Bootstrap Custom Theme Styles
+===================================================*/
+
+/* Body and structure
+-------------------------------------------------- */
+
+body {
+  padding-top: 100px;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  text-shadow: none;
+  background: #FFBF3F;
+}
+
+::selection {
+  text-shadow: none;
+  background: #FFBF3F;
+}
+
+/* A better looking default horizontal rule */
+
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Allow only vertical resizing of textareas */
+
+textarea {
+  resize: vertical;
+}
+
+.divider {
+  height: 30px;
+  background: url(../img/div-pat.png) repeat-x transparent;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+}
+
+/* Chrome Frame prompt */
+
+.chromeframe {
+  padding: 0.2em 0;
+  margin: 0.2em 0;
+  color: #000;
+  background: #ccc;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+.navbar .container {
+  width: 225px;
+}
+
+.navbar-fixed-top .brand {
+  padding: 17.5px 0;
+}
+
+.navbar-fixed-top .brand img {
+  width: 225px;
+  height: 65px;
+}
+
+/* Brand
+-------------------------------------------------- */
+
+/* Sections
+-------------------------------------------------- */
+
+section .container {
+  text-align: center;
+}
+
+section .section-title {
+  margin-bottom: 40px;
+  font-size: 74px;
+  line-height: 1;
+}
+
+section.inverted h1,
+section.inverted h2,
+section.inverted h3,
+section.inverted p {
+  color: #FFF;
+}
+
+#intro {
+  padding: 200px 0;
+}
+
+#intro h1,
+#intro p {
+  margin-bottom: 30px;
+}
+
+#intro .btn-anchor .icon-white.right {
+  margin: 5px 0 0 8px;
+}
+
+#about #bio {
+  padding: 125px 0;
+  background-color: #006C81;
+}
+
+#about #skills {
+  padding: 125px 0;
+  background-color: #15859B;
+}
+
+#portfolio {
+  padding: 150px 0;
+  background-color: #FE8315;
+}
+
+#portfolio img {
+  margin: 20px;
+  border: 10px solid #FFFFFF;
+}
+
+#contact {
+  padding: 150px 0;
+  background-color: #FA3113;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+/* Helper classes
+-------------------------------------------------- */
+
+/* Image replacement */
+
+.ir {
+  overflow: hidden;
+  *text-indent: -9999px;
+  background-color: transparent;
+  border: 0;
+}
+
+.ir:before {
+  display: block;
+  width: 0;
+  height: 150%;
+  content: "";
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable
+   when navigated to via the keyboard: h5bp.com/p */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+
+.invisible {
+  visibility: hidden;
+}
+
+/* Clearfix: contain floats */
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* For IE 6/7 only
+   Include this rule to trigger hasLayout and contain floats. */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.flt-lt-top {
+  float: left;
+  margin: 8px 20px 20px 0;
+}
+
+.flt-lt-mdl {
+  float: left;
+  margin: 20px 20px 20px 0;
+}
+
+.flt-lt-btm {
+  float: left;
+  margin: 20px 20px 8px 0;
+}
+
+.flt-rt-top {
+  float: right;
+  margin: 8px 0 20px 20px;
+}
+
+.flt-rt-mdl {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+.flt-rt-btm {
+  float: right;
+  margin: 20px 0 8px 20px;
+}
+
+/* Responsive
+-------------------------------------------------- */
+
+/* Desktop large
+------------------------- */
+
+@media (min-width: 1200px) {
+  
+}
+
+/* Desktop
+------------------------- */
+
+@media (max-width: 979px) {
+  
+}
+
+/* Tablet to desktop
+------------------------- */
+
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+
+/* Tablet
+------------------------- */
+
+@media (max-width: 767px) {
+  
+}
+
+/* Landscape phones
+------------------------- */
+
+@media (max-width: 480px) {
+  
+}
+
+/* Portrait phones
+------------------------- */
+
+@media (max-width: 320px) {
+  
+}
