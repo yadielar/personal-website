@@ -97,12 +97,18 @@ section {
         line-height: 1;
         margin-bottom: 40px;
     }
+    .subsection-title {
+        margin-bottom: 30px;
+    }
 
     &.inverted {
         h1, h2, h3, p {
             color: #FFF;
         }
     }
+}
+.narrow {
+    padding: 0 102px;
 }
 
 #intro {
@@ -125,22 +131,42 @@ section {
     #skills {
         background-color: #15859B;
         padding: 125px 0;
+
+        img {
+            margin-bottom: 40px;
+        }
+    }
+    .img-profile {
+        width: 325px;
+        margin-bottom: 40px;
     }
 }
 
 #portfolio {
-    background-color: #FE8315;
-    padding: 150px 0;
 
+    /* Orange */
     /*
-    .container {
-        width: 910px;
-    }
+    @portfolio-text:   #FFFFFF;
+    @portfolio-bg:     #FE8315;
+    @portfolio-border: #FFFFFF;
     */
 
+    /* White */
+    @portfolio-text:   #000000;
+    @portfolio-bg:     #FFFFFF;
+    @portfolio-border: #EEEEEE;
+
+    background-color: @portfolio-bg;
+    padding: 150px 0;
+
+    .section-title {
+        color: @portfolio-text;
+    }
+
     img {
-        border: 10px solid #FFFFFF;
-        margin: 20px;
+        margin-bottom: 60px;
+        border: 2px solid @portfolio-border;
+        border-radius: 10px;
     }
 }
 

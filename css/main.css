@@ -93,11 +93,19 @@ section .section-title {
   line-height: 1;
 }
 
+section .subsection-title {
+  margin-bottom: 30px;
+}
+
 section.inverted h1,
 section.inverted h2,
 section.inverted h3,
 section.inverted p {
   color: #FFF;
+}
+
+.narrow {
+  padding: 0 102px;
 }
 
 #intro {
@@ -123,14 +131,28 @@ section.inverted p {
   background-color: #15859B;
 }
 
+#about #skills img {
+  margin-bottom: 40px;
+}
+
+#about .img-profile {
+  width: 325px;
+  margin-bottom: 40px;
+}
+
 #portfolio {
   padding: 150px 0;
-  background-color: #FE8315;
+  background-color: #ffffff;
+}
+
+#portfolio .section-title {
+  color: #000000;
 }
 
 #portfolio img {
-  margin: 20px;
-  border: 10px solid #FFFFFF;
+  margin-bottom: 60px;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
 }
 
 #contact {
