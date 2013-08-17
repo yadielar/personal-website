@@ -131,7 +131,9 @@ section.inverted p {
   background-color: #15859B;
 }
 
-#about #skills img {
+#about #skills .two-worlds {
+  width: 712px;
+  height: 299px;
   margin-bottom: 40px;
 }
 
