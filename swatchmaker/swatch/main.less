@@ -60,10 +60,13 @@ textarea {
 /* Navbar
 -------------------------------------------------- */
 
-@logoWidth: 225px;
+@logoWidth: 226px;
 @logoHeight: 65px;
 
 .navbar {
+    .navbar-inner {
+        min-height: 0;
+    }
     .container {
         width: @logoWidth;
     }
@@ -71,8 +74,7 @@ textarea {
         padding: 17.5px 0;
 
         img {
-            width: @logoWidth;
-            /*height: @logoHeight;*/
+            width: 100%;
         }
     }
 }
@@ -168,6 +170,10 @@ section {
         margin-bottom: 60px;
         border: 2px solid @portfolio-border;
         border-radius: 10px;
+    }
+
+    #more {
+        cursor: pointer;
     }
 }
 
@@ -289,6 +295,9 @@ section {
         .navbar-inner {
             padding: 0;
         }
+        .brand img {
+            max-width: 100%;
+        }
     }
     #intro,
     #about #bio,
@@ -338,6 +347,9 @@ section {
 /* Big Landscape phones
 ------------------------- */
 @media (max-width: 640px) {
+    section {
+        overflow: hidden;
+    }
     .narrow {
         padding: 0 75px;
     }
@@ -359,12 +371,26 @@ section {
         line-height: 24px;
     }
     .narrow {
-        padding: 0 40px;
+        padding: 0 35px;
+    }
+    .navbar {
+        .container {
+            width: 182px;
+        }
+        &-fixed-top .brand {
+            padding: 12.5px 0;
+        }
     }
     #intro {
+        padding-top:    35px;
+        padding-bottom: 45px;
+
         h1 {
             font-size: 41px;
             margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 20px;
         }
     }
 }
@@ -392,5 +418,20 @@ section {
 @media (max-width: 320px) {
 	.narrow {
         padding: 0 20px;
+    }
+    .navbar {
+        .container {
+            width: 152px;
+        }
+        &-fixed-top .brand {
+            padding: 10.5px 0;
+        }
+    }
+    #intro {
+        padding-top:    25px;
+        padding-bottom: 35px;
+        p {
+            margin-bottom: 20px;
+        }
     }
 }

@@ -64,8 +64,12 @@ textarea {
 /* Navbar
 -------------------------------------------------- */
 
+.navbar .navbar-inner {
+  min-height: 0;
+}
+
 .navbar .container {
-  width: 225px;
+  width: 226px;
 }
 
 .navbar-fixed-top .brand {
@@ -73,9 +77,7 @@ textarea {
 }
 
 .navbar-fixed-top .brand img {
-  width: 225px;
-  /*height: @logoHeight;*/
-
+  width: 100%;
 }
 
 /* Brand
@@ -155,6 +157,10 @@ section.inverted p {
   margin-bottom: 60px;
   border: 2px solid #eeeeee;
   border-radius: 10px;
+}
+
+#portfolio #more {
+  cursor: pointer;
 }
 
 #contact {
@@ -302,6 +308,9 @@ section.inverted p {
   .navbar-fixed-top .navbar-inner {
     padding: 0;
   }
+  .navbar-fixed-top .brand img {
+    max-width: 100%;
+  }
   #intro,
   #about #bio,
   #about #skills,
@@ -350,6 +359,9 @@ section.inverted p {
 ------------------------- */
 
 @media (max-width: 640px) {
+  section {
+    overflow: hidden;
+  }
   .narrow {
     padding: 0 75px;
   }
@@ -372,11 +384,24 @@ section.inverted p {
     line-height: 24px;
   }
   .narrow {
-    padding: 0 40px;
+    padding: 0 35px;
+  }
+  .navbar .container {
+    width: 182px;
+  }
+  .navbar-fixed-top .brand {
+    padding: 12.5px 0;
+  }
+  #intro {
+    padding-top: 35px;
+    padding-bottom: 45px;
   }
   #intro h1 {
     margin-bottom: 15px;
     font-size: 41px;
+  }
+  #intro p {
+    margin-bottom: 20px;
   }
 }
 
@@ -405,5 +430,18 @@ section.inverted p {
 @media (max-width: 320px) {
   .narrow {
     padding: 0 20px;
+  }
+  .navbar .container {
+    width: 152px;
+  }
+  .navbar-fixed-top .brand {
+    padding: 10.5px 0;
+  }
+  #intro {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  #intro p {
+    margin-bottom: 20px;
   }
 }
