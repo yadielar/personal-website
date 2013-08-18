@@ -154,6 +154,9 @@ section.inverted p {
 }
 
 #portfolio img {
+  display: block;
+  /* fixes annoying lazyload bug*/
+
   margin-bottom: 60px;
   border: 2px solid #eeeeee;
   border-radius: 10px;
@@ -299,9 +302,6 @@ section.inverted p {
   body {
     padding-top: 0;
   }
-  img {
-    max-width: 95%;
-  }
   .navbar-fixed-top {
     margin-bottom: 0;
   }
@@ -329,7 +329,10 @@ section.inverted p {
 ------------------------- */
 
 @media (min-width: 768px) and (max-width: 979px) {
-  
+  #portfolio .padder {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 /* Tablet
@@ -337,7 +340,7 @@ section.inverted p {
 
 @media (max-width: 767px) {
   img {
-    max-width: 100%;
+    max-width: 99%;
   }
   body {
     padding: 0;

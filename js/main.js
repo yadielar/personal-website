@@ -50,13 +50,20 @@ $(document).ready(function() {
 	}
 
 
-
-
 	// Initialize lazy loading of images
 	$("img.lazy").lazyload({ 
 	    effect : "fadeIn",
 	    threshold : 400
 	});
+
+});
+
+
+
+$(window).load(function() {
+	//$('body').removeClass('loading');
+	//$('.all-content').fadeIn('slow');
+	//$('.main-loader').hide();
 
 	// Only load 3 portfolio items at a time
  	$("#portfolio img").hide();
@@ -74,13 +81,5 @@ $(document).ready(function() {
 		   }
 	    });   
 	});
-
+	
 });
-
-/*
-$(window).load(function() {
-	$('body').removeClass('loading');
-	$('.all-content').fadeIn('slow');
-	$('.main-loader').hide();
-});
-*/
