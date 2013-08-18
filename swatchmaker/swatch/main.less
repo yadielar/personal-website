@@ -45,7 +45,7 @@ textarea {
     height: 30px;
     border-top:    10px solid #000;
     border-bottom: 10px solid #000;
-    background: url(../img/div-pat.png) repeat-x transparent;
+    background: url(../img/div-pat.png) repeat-x 300px 0 transparent;
 }
 
 /* Chrome Frame prompt */
@@ -72,7 +72,7 @@ textarea {
 
         img {
             width: @logoWidth;
-            height: @logoHeight;
+            /*height: @logoHeight;*/
         }
     }
 }
@@ -135,7 +135,6 @@ section {
         .two-worlds {
             margin-bottom: 40px;
             width: 712px;
-            height: 299px;
         }
     }
     .img-profile {
@@ -175,6 +174,10 @@ section {
 #contact {
     background-color: #FA3113;
     padding: 150px 0;
+
+    .btn {
+        margin-top: 20px;
+    }
 }
 
 
@@ -274,7 +277,36 @@ section {
 /* Desktop
 ------------------------- */
 @media (max-width: 979px) {
-	
+	body {
+        padding-top: 0;
+    }
+    img {
+        max-width: 95%;
+    }
+    .navbar-fixed-top {
+        margin-bottom: 0;
+
+        .navbar-inner {
+            padding: 0;
+        }
+    }
+    #intro,
+    #about #bio,
+    #about #skills,
+    #portfolio,
+    #contact {
+        padding: 100px 0;
+    }
+    #intro {
+        h1 {
+            font-size: 43px;
+            margin-bottom: 20px;
+            margin-top: 0;
+        }
+    }
+    #about {
+        
+    }
 }
 
 /* Tablet to desktop
@@ -286,17 +318,79 @@ section {
 /* Tablet
 ------------------------- */
 @media (max-width: 767px) {
-    
+    img {
+        max-width: 100%;
+    }
+    body {
+        padding: 0;
+    }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #portfolio, #contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Big Landscape phones
+------------------------- */
+@media (max-width: 640px) {
+    .narrow {
+        padding: 0 75px;
+    }
+    #intro,
+    #about #bio,
+    #about #skills,
+    #portfolio,
+    #contact {
+        padding-top:    50px;
+        padding-bottom: 50px;
+    }
 }
 
 /* Landscape phones
 ------------------------- */
 @media (max-width: 480px) {
-    
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .narrow {
+        padding: 0 40px;
+    }
+    #intro {
+        h1 {
+            font-size: 41px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/* Big Portrait phones
+------------------------- */
+@media (max-width: 360px) {
+    .narrow {
+        padding: 0 30px;
+    }
+    section .section-title {
+        font-size: 70px;
+    }
+    section .subsection-title {
+        font-size: 44px;
+    }
+    #portfolio img {
+        margin-bottom: 40px;
+        border-radius: 6px;
+    }
 }
 
 /* Portrait phones
 ------------------------- */
 @media (max-width: 320px) {
-	
+	.narrow {
+        padding: 0 20px;
+    }
 }
