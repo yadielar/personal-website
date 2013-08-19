@@ -6806,10 +6806,15 @@ legend {
 }
 
 .well {
+  background-color: #F4F4F4;
   border: none;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
+}
+
+.well p {
+  font-size: 18px;
 }
 
 .progress {

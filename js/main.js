@@ -67,7 +67,6 @@ $(document).ready(function() {
 			fixNav.removeClass('visible');
 		});
 	}
-
 	$("#fx-menu-btn").on("tap", function(){
 		if (!fixNav.hasClass('visible')) {
 			showMenu();
@@ -78,6 +77,13 @@ $(document).ready(function() {
 	$("#fx-menu-nav a").on("click", function(){
 		hideMenu();
 	});
+
+
+	// Contact buttons effects
+	$("#contact .social img").mouseover(function(){
+		$(this).animateCSS('pulse');
+	});
+
 
 	// Initialize lazy loading of images
 	$("img.lazy").lazyload({ 
