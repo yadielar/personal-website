@@ -61,6 +61,20 @@ textarea {
   background: #ccc;
 }
 
+/* Fixed Menu
+-------------------------------------------------- */
+
+#fx-menu {
+  position: fixed;
+  top: 22px;
+  right: 22px;
+  z-index: 1040;
+  display: block;
+  width: 58px;
+  height: 58px;
+  cursor: pointer;
+}
+
 /* Navbar
 -------------------------------------------------- */
 
@@ -386,6 +400,12 @@ section.inverted p {
     font-size: 18px;
     line-height: 24px;
   }
+  #fx-menu {
+    top: 16px;
+    right: 16px;
+    width: 47px;
+    height: 47px;
+  }
   .narrow {
     padding: 0 35px;
   }
@@ -393,7 +413,7 @@ section.inverted p {
     width: 182px;
   }
   .navbar-fixed-top .brand {
-    padding: 12.5px 0;
+    padding: 12.5px 0 10.5px;
   }
   #intro {
     padding-top: 35px;
@@ -431,6 +451,10 @@ section.inverted p {
 ------------------------- */
 
 @media (max-width: 320px) {
+  #fx-menu {
+    top: 9px;
+    right: 9px;
+  }
   .narrow {
     padding: 0 20px;
   }
@@ -438,7 +462,7 @@ section.inverted p {
     width: 152px;
   }
   .navbar-fixed-top .brand {
-    padding: 10.5px 0;
+    padding: 10.5px 0 8.5px;
   }
   #intro {
     padding-top: 25px;

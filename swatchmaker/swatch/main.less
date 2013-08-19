@@ -57,6 +57,20 @@ textarea {
 }
 
 
+/* Fixed Menu
+-------------------------------------------------- */
+#fx-menu {
+    position: fixed;
+    top: 22px;
+    right: 22px;
+    width: 58px;
+    height: 58px;
+    z-index: 1040;
+    display: block;
+    cursor: pointer;
+}
+
+
 /* Navbar
 -------------------------------------------------- */
 
@@ -371,6 +385,12 @@ section {
         font-size: 18px;
         line-height: 24px;
     }
+    #fx-menu {
+        top: 16px;
+        right: 16px;
+        width: 47px;
+        height: 47px;
+    }
     .narrow {
         padding: 0 35px;
     }
@@ -379,7 +399,7 @@ section {
             width: 182px;
         }
         &-fixed-top .brand {
-            padding: 12.5px 0;
+            padding: 12.5px 0 10.5px;
         }
     }
     #intro {
@@ -417,6 +437,10 @@ section {
 /* Portrait phones
 ------------------------- */
 @media (max-width: 320px) {
+    #fx-menu {
+        top: 9px;
+        right: 9px;
+    }
 	.narrow {
         padding: 0 20px;
     }
@@ -425,7 +449,7 @@ section {
             width: 152px;
         }
         &-fixed-top .brand {
-            padding: 10.5px 0;
+            padding: 10.5px 0 8.5px;
         }
     }
     #intro {
