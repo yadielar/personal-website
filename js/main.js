@@ -8,8 +8,6 @@ $(document).ready(function() {
 		.replace(/\/$/,'');
 	}
 	var locationPath = filterPath(location.pathname);
-	//Removed because it causes safari's address bar to cover uppermost content
-	//var scrollElem = scrollableElement('html', 'body');
 	var scrollElem = $('html, body');
 
 	$('a[href*=#]').each(function() {
@@ -29,25 +27,6 @@ $(document).ready(function() {
 			}
 		}
 	});
-	//Removed because it causes safari's address bar to cover uppermost content
-	// use the first element that is "scrollable"
-	/*function scrollableElement(els) {
-		for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-			var el = arguments[i],
-			$scrollElement = $(el);
-			if ($scrollElement.scrollTop()> 0) {
-				return el;
-			} else {
-				$scrollElement.scrollTop(1);
-				var isScrollable = $scrollElement.scrollTop()> 0;
-				$scrollElement.scrollTop(0);
-				if (isScrollable) {
-					return el;
-				}
-			}
-		}
-		return [];
-	}*/
 	
 
 	// Fixed Menu Toggle
