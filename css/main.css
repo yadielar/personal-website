@@ -8,10 +8,6 @@
 /* Body and structure
 -------------------------------------------------- */
 
-body {
-  padding-top: 100px;
-}
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -64,7 +60,7 @@ textarea {
 /* Fixed Menu
 -------------------------------------------------- */
 
-#fx-menu {
+#fx-menu-btn {
   position: fixed;
   top: 22px;
   right: 22px;
@@ -73,6 +69,56 @@ textarea {
   width: 58px;
   height: 58px;
   cursor: pointer;
+  -webkit-animation-delay: 2s;
+     -moz-animation-delay: 2s;
+      -ms-animation-delay: 2s;
+       -o-animation-delay: 2s;
+}
+
+#fx-menu-nav {
+  position: fixed;
+  top: 82px;
+  right: 22px;
+  z-index: 1040;
+  margin: 0;
+  text-align: right;
+  list-style: none;
+}
+
+#fx-menu-nav li {
+  display: none;
+}
+
+#fx-menu-nav li a {
+  display: inline-block;
+  padding: 6px 11px 7px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  background: #0E2637;
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+#fx-menu-nav li a:hover {
+  text-decoration: none;
+  background: #FE8315;
+}
+
+#fx-menu-nav li a:active,
+#fx-menu-nav li a:focus {
+  outline: none;
+}
+
+#fx-menu-nav,
+#fx-menu-nav li {
+  -webkit-animation-duration: 0.25s;
+     -moz-animation-duration: 0.25s;
+      -ms-animation-duration: 0.25s;
+       -o-animation-duration: 0.25s;
 }
 
 /* Navbar
@@ -86,11 +132,11 @@ textarea {
   width: 226px;
 }
 
-.navbar-fixed-top .brand {
+.navbar-static-top .brand {
   padding: 17.5px 0;
 }
 
-.navbar-fixed-top .brand img {
+.navbar-static-top .brand img {
   width: 100%;
 }
 
@@ -132,6 +178,13 @@ section.inverted p {
 #intro h1,
 #intro p {
   margin-bottom: 30px;
+}
+
+#intro .btn-anchor {
+  -webkit-animation-delay: 15s;
+     -moz-animation-delay: 15s;
+      -ms-animation-delay: 15s;
+       -o-animation-delay: 15s;
 }
 
 #intro .btn-anchor .icon-white.right {
@@ -316,13 +369,13 @@ section.inverted p {
   body {
     padding-top: 0;
   }
-  .navbar-fixed-top {
+  .navbar-static-top {
     margin-bottom: 0;
   }
-  .navbar-fixed-top .navbar-inner {
+  .navbar-static-top .navbar-inner {
     padding: 0;
   }
-  .navbar-fixed-top .brand img {
+  .navbar-static-top .brand img {
     max-width: 100%;
   }
   #intro,
@@ -400,11 +453,15 @@ section.inverted p {
     font-size: 18px;
     line-height: 24px;
   }
-  #fx-menu {
+  #fx-menu-btn {
     top: 16px;
     right: 16px;
     width: 47px;
     height: 47px;
+  }
+  #fx-menu-nav {
+    top: 67px;
+    right: 20px;
   }
   .narrow {
     padding: 0 35px;
@@ -412,7 +469,7 @@ section.inverted p {
   .navbar .container {
     width: 182px;
   }
-  .navbar-fixed-top .brand {
+  .navbar-static-top .brand {
     padding: 12.5px 0 10.5px;
   }
   #intro {
@@ -432,6 +489,10 @@ section.inverted p {
 ------------------------- */
 
 @media (max-width: 360px) {
+  .lead {
+    font-size: 24px;
+    line-height: 30px;
+  }
   .narrow {
     padding: 0 30px;
   }
@@ -451,9 +512,17 @@ section.inverted p {
 ------------------------- */
 
 @media (max-width: 320px) {
-  #fx-menu {
+  #fx-menu-btn {
     top: 9px;
     right: 9px;
+  }
+  #fx-menu-nav {
+    top: 59px;
+    right: 13px;
+  }
+  .lead {
+    font-size: 22px;
+    line-height: 28px;
   }
   .narrow {
     padding: 0 20px;
@@ -461,7 +530,7 @@ section.inverted p {
   .navbar .container {
     width: 152px;
   }
-  .navbar-fixed-top .brand {
+  .navbar-static-top .brand {
     padding: 10.5px 0 8.5px;
   }
   #intro {

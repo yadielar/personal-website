@@ -6207,6 +6207,11 @@ p {
   line-height: 28px;
 }
 
+.lead {
+  font-size: 26px;
+  font-weight: 400;
+}
+
 label,
 input,
 button,
@@ -6272,7 +6277,7 @@ th {
   margin-top: 6px;
 }
 
-.navbar-fixed-top .brand {
+.navbar-static-top .brand {
   padding: 0;
   margin-left: 0;
 }

@@ -1,8 +1,5 @@
 $(document).ready(function() {
-	//$('body').addClass('loading');
-	//$('.all-content').hide();
-
-
+	
 	// Perform a smooth page scroll to an anchor on the same page
 	function filterPath(string) {
 		return string
@@ -11,7 +8,9 @@ $(document).ready(function() {
 		.replace(/\/$/,'');
 	}
 	var locationPath = filterPath(location.pathname);
-	var scrollElem = scrollableElement('html', 'body');
+	//Removed because it causes safari's address bar to cover uppermost content
+	//var scrollElem = scrollableElement('html', 'body');
+	var scrollElem = $('html, body');
 
 	$('a[href*=#]').each(function() {
 		var thisPath = filterPath(this.pathname) || locationPath;
@@ -30,8 +29,9 @@ $(document).ready(function() {
 			}
 		}
 	});
+	//Removed because it causes safari's address bar to cover uppermost content
 	// use the first element that is "scrollable"
-	function scrollableElement(els) {
+	/*function scrollableElement(els) {
 		for (var i = 0, argLength = arguments.length; i <argLength; i++) {
 			var el = arguments[i],
 			$scrollElement = $(el);
@@ -47,8 +47,37 @@ $(document).ready(function() {
 			}
 		}
 		return [];
+	}*/
+	
+
+	// Fixed Menu Toggle
+	var fixNav = $('#fx-menu-nav'),
+		fixNavItems = $('#fx-menu-nav li');
+
+	function showMenu() {
+		fixNav.animateCSS('fadeInDown');
+		fixNavItems.animateCSS('fadeInDown', function(){
+			fixNav.addClass('visible');
+		});
+	}
+	function hideMenu() {
+		fixNav.animateCSS('fadeOutUp');
+		fixNavItems.animateCSS('fadeOutUp', function(){
+			fixNavItems.hide();
+			fixNav.removeClass('visible');
+		});
 	}
 
+	$("#fx-menu-btn").on("tap", function(){
+		if (!fixNav.hasClass('visible')) {
+			showMenu();
+		} else {
+			hideMenu();
+		}
+	});
+	$("#fx-menu-nav a").on("click", function(){
+		hideMenu();
+	});
 
 	// Initialize lazy loading of images
 	$("img.lazy").lazyload({ 
@@ -61,9 +90,6 @@ $(document).ready(function() {
 
 
 $(window).load(function() {
-	//$('body').removeClass('loading');
-	//$('.all-content').fadeIn('slow');
-	//$('.main-loader').hide();
 
 	// Only load 3 portfolio items at a time
  	$("#portfolio img").hide();

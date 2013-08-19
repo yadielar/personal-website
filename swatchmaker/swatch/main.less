@@ -9,7 +9,7 @@
 -------------------------------------------------- */
 
 body {
-    padding-top: 100px;
+    
 }
 
 /*
@@ -59,15 +59,61 @@ textarea {
 
 /* Fixed Menu
 -------------------------------------------------- */
-#fx-menu {
+#fx-menu-btn {
     position: fixed;
     top: 22px;
     right: 22px;
     width: 58px;
     height: 58px;
-    z-index: 1040;
     display: block;
     cursor: pointer;
+    z-index: 1040;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+#fx-menu-nav {
+    position: fixed;
+    top: 82px;
+    right: 22px;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+    z-index: 1040;
+
+    li {
+        display: none;
+    }
+
+    li a {
+        display: inline-block;
+        background: #0E2637;
+        border: 3px solid #FFFFFF;
+        box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.30);
+        margin: 7px 0;
+        padding: 6px 11px 7px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        border-radius: 4px;
+
+        &:hover {
+            text-decoration: none;
+            background: #FE8315;
+        }
+        &:active, &:focus {
+            outline: none;
+        }
+    }
+}
+#fx-menu-nav, #fx-menu-nav li {
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-duration: 0.25s;
+    -ms-animation-duration: 0.25s;
+    -o-animation-duration: 0.25s;
 }
 
 
@@ -84,7 +130,7 @@ textarea {
     .container {
         width: @logoWidth;
     }
-    &-fixed-top .brand {
+    &-static-top .brand {
         padding: 17.5px 0;
 
         img {
@@ -134,6 +180,12 @@ section {
         margin-bottom: 30px;
     }
 
+    .btn-anchor {
+        -webkit-animation-delay: 15s;
+        -moz-animation-delay: 15s;
+        -ms-animation-delay: 15s;
+        -o-animation-delay: 15s;
+    }
     .btn-anchor .icon-white.right {
         margin: 5px 0 0 8px;
     }
@@ -301,7 +353,7 @@ section {
 	body {
         padding-top: 0;
     }
-    .navbar-fixed-top {
+    .navbar-static-top {
         margin-bottom: 0;
 
         .navbar-inner {
@@ -324,9 +376,6 @@ section {
             margin-bottom: 20px;
             margin-top: 0;
         }
-    }
-    #about {
-        
     }
 }
 
@@ -385,11 +434,15 @@ section {
         font-size: 18px;
         line-height: 24px;
     }
-    #fx-menu {
+    #fx-menu-btn {
         top: 16px;
         right: 16px;
         width: 47px;
         height: 47px;
+    }
+    #fx-menu-nav {
+        top: 67px;
+        right: 20px;
     }
     .narrow {
         padding: 0 35px;
@@ -398,7 +451,7 @@ section {
         .container {
             width: 182px;
         }
-        &-fixed-top .brand {
+        &-static-top .brand {
             padding: 12.5px 0 10.5px;
         }
     }
@@ -419,6 +472,10 @@ section {
 /* Big Portrait phones
 ------------------------- */
 @media (max-width: 360px) {
+    .lead {
+        font-size: 24px;
+        line-height: 30px;
+    }
     .narrow {
         padding: 0 30px;
     }
@@ -437,9 +494,17 @@ section {
 /* Portrait phones
 ------------------------- */
 @media (max-width: 320px) {
-    #fx-menu {
+    #fx-menu-btn {
         top: 9px;
         right: 9px;
+    }
+    #fx-menu-nav {
+        top: 59px;
+        right: 13px;
+    }
+    .lead {
+        font-size: 22px;
+        line-height: 28px;
     }
 	.narrow {
         padding: 0 20px;
@@ -448,7 +513,7 @@ section {
         .container {
             width: 152px;
         }
-        &-fixed-top .brand {
+        &-static-top .brand {
             padding: 10.5px 0 8.5px;
         }
     }
