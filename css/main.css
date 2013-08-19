@@ -220,6 +220,10 @@ section.inverted p {
   color: #000000;
 }
 
+#portfolio p {
+  margin-bottom: 40px;
+}
+
 #portfolio img {
   display: block;
   /* fixes annoying lazyload bug*/
