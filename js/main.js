@@ -6,22 +6,25 @@ $(document).ready(function() {
 
 	function showMenu() {
 		fixNav.animateCSS('fadeInDown');
-		fixNavItems.animateCSS('fadeInDown', function(){
-			fixNav.addClass('visible');
-		});
+		fixNavItems.animateCSS('fadeInDown');
+		if (!Modernizr.cssanimations) {
+			fixNavItems.show();
+		}
 	}
 	function hideMenu() {
 		fixNav.animateCSS('fadeOutUp');
 		fixNavItems.animateCSS('fadeOutUp', function(){
 			fixNavItems.hide();
-			fixNav.removeClass('visible');
 		});
+		if (!Modernizr.cssanimations) {
+			fixNavItems.hide();
+		}
 	}
 	$("#fx-menu-btn").on("tap", function(){
-		if (!fixNav.hasClass('visible')) {
-			showMenu();
-		} else {
+		if (fixNav.is(':visible')) {
 			hideMenu();
+		} else {
+			showMenu();
 		}
 	});
 	$("#fx-menu-nav a").on("click", function(){
