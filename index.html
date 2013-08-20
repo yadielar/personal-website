@@ -25,16 +25,15 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     <!-- google analytics code -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-43288603-1']);
-        _gaq.push(['_trackPageview']);
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      ga('create', 'UA-43288603-1', 'yadielar.com');
+      ga('send', 'pageview');
+
     </script>
 </head>
 
@@ -46,7 +45,7 @@
 <![endif]-->
 
 
-<a id="fx-menu-btn" class="animated bounceInUp"><img src="img/menu-btn@2x.png"></a>
+<a id="fx-menu-btn" class="animated bounceInUp"><img src="img/menu-btn@2x.png" alt="nav"></a>
 <ul id="fx-menu-nav">
     <li><a href="#top">Go to top</a></li>
     <li><a href="#about">About me</a></li>
@@ -87,7 +86,7 @@
         <div class="container animated fadeInUp">
             <div class="content narrow">
                 <h1 class="section-title">About me</h1>
-                <img class="img-profile img-circle" src="img/me.jpg">
+                <img class="img-profile img-circle" src="img/me.jpg" alt="Profile Picture">
                 <p class="lead">Hi, my name is Yadiel Arroyo and I'm a designer and developer.</p>
                 <p>Specifically, I design and develop websites and user interfaces. Since I was a kid I've loved both drawing, and reading science books. Eventually, when it was time to choose a career, I had to decide which one I loved the most. Should I become a graphic designer? Or maybe an engineer? I finally decided to become a graphic designer because I loved the creative aspect.</p>
                 <p>But as time passed, my love for science and technology only grew stronger. After taking some web design classes in college, it occurred to me that I could join my two loves. So I became an interface designer and developer, and I've been loving the ride ever since!</p>
@@ -98,7 +97,7 @@
         <div class="container">
             <div class="content narrow">
                 <h2 class="subsection-title">Hello 2 Worlds!</h2>
-                <img class="two-worlds" src="img/hello-2-worlds@2x.png">
+                <img class="two-worlds" src="img/hello-2-worlds@2x.png" alt="Hello 2 Worlds!">
                 <p class="lead">I give you the best of both worlds without sacrificing quality. <span class="hidden">Though design is where it all started, I’ve grown to love code too.</span> I appreciate a well designed product as much as  good, clean and efficient code.</p>
 
                 <p>My expertise lies within <strong>HTML</strong>, <strong>CSS</strong> &amp; <strong>JavaScript</strong>. I make sure that the final product follows the original design as closely as possible, and if unexpected problems arise during development, I have the necessary design skills to make decisions as needed.</p>
@@ -116,18 +115,18 @@
 
             <p>Check out a selection of some of the work I've created.</p>
 
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/c3tec-website-01.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/is-logo.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/manati-medical-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/adal-logo.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/meyer-nurseries-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/prescafe-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/coffee-expo-page.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/faccio-pizza-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/lacajaforte-page.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/cga-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/hotellaplaya-website.jpg">
-            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/project-process.jpg">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/c3tec-website-01.jpg" alt="C3Tec Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/is-logo.jpg" alt="Logo for Interactive Shore">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/manati-medical-website.jpg" alt="Manati Medical Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/adal-logo.jpg" alt="Logo for Adal Events">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/meyer-nurseries-website.jpg" alt="Meyer Nurseries Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/prescafe-website.jpg" alt="PR Es Café Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/coffee-expo-page.jpg" alt="PR Coffee Expo Webpage">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/faccio-pizza-website.jpg" alt="Faccio Pizza Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/lacajaforte-page.jpg" alt="La Caja Forte Web App">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/cga-website.jpg" alt="CGA Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/hotellaplaya-website.jpg" alt="Hotel La Playa Website">
+            <img class="lazy" src="img/gray.png" width="960" height="700" data-original="img/portfolio/project-process.jpg" alt="Project Process">
 
             <a id="more" class="btn btn-anchor"><span class="pop">See more</span></a>
 
