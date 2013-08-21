@@ -66,7 +66,7 @@ function setAnchorOffsets() {
 			var $target = $(this.hash), target = this.hash;
 			if (target) {
 				var targetOffset = $target.offset().top;
-				$(this).off('click.offsets').on('click.offsets',function(){
+				$(this).off('click.offsets').on('click.offsets',function(event){
 					event.preventDefault();
 					$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
 						location.hash = target;
