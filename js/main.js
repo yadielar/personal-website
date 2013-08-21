@@ -41,32 +41,32 @@ $(document).ready(function() {
 	// Initialize lazy loading of images
 	$("img.lazy").lazyload({
 		effect: "fadeIn",
-		threshold: 400
+		threshold: 400,
+		load : function(elements_left, settings) {
+	        setAnchorOffsets();
+	    }
 	});
 
 });
 
+// Perform a smooth page scroll to an anchor on the same page
+function filterPath(string) {
+	return string
+	.replace(/^\//,'')
+	.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+	.replace(/\/$/,'');
+}
+var locationPath = filterPath(location.pathname);
+var scrollElem = $('html, body');
 
-
-$(window).load(function() {
-
-	// Perform a smooth page scroll to an anchor on the same page
-	function filterPath(string) {
-		return string
-		.replace(/^\//,'')
-		.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-		.replace(/\/$/,'');
-	}
-	var locationPath = filterPath(location.pathname);
-	var scrollElem = $('html, body');
-
+function setAnchorOffsets() {
 	$('a[href*=#]').each(function() {
 		var thisPath = filterPath(this.pathname) || locationPath;
 		if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/,'') ) {
 			var $target = $(this.hash), target = this.hash;
 			if (target) {
 				var targetOffset = $target.offset().top;
-				$(this).click(function(event) {
+				$(this).off('click.offsets').on('click.offsets',function(){
 					event.preventDefault();
 					$(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
 						location.hash = target;
@@ -75,7 +75,11 @@ $(window).load(function() {
 			}
 		}
 	});
+}
 
+$(window).load(function() {
+
+	setAnchorOffsets();
 
 	// Only load 3 portfolio items at a time
 	$("#portfolio img").hide();
