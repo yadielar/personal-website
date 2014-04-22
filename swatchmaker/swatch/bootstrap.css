@@ -3362,17 +3362,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0a0a0a;
-  *background-color: #1a1a1a;
-  background-image: -moz-linear-gradient(top, #000000, #1a1a1a);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000000), to(#1a1a1a));
-  background-image: -webkit-linear-gradient(top, #000000, #1a1a1a);
-  background-image: -o-linear-gradient(top, #000000, #1a1a1a);
-  background-image: linear-gradient(to bottom, #000000, #1a1a1a);
+  background-color: #fa5013;
+  *background-color: #fa7e13;
+  background-image: -moz-linear-gradient(top, #fa3113, #fa7e13);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fa3113), to(#fa7e13));
+  background-image: -webkit-linear-gradient(top, #fa3113, #fa7e13);
+  background-image: -o-linear-gradient(top, #fa3113, #fa7e13);
+  background-image: linear-gradient(to bottom, #fa3113, #fa7e13);
   background-repeat: repeat-x;
-  border-color: #1a1a1a #1a1a1a #000000;
+  border-color: #fa7e13 #fa7e13 #bd5904;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff000000', endColorstr='#ff1a1a1a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffa3113', endColorstr='#fffa7e13', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -3383,13 +3383,13 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #1a1a1a;
-  *background-color: #0d0d0d;
+  background-color: #fa7e13;
+  *background-color: #ee7105;
 }
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #000000 \9;
+  background-color: #d56505 \9;
 }
 
 .btn-warning {
@@ -3772,7 +3772,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #1a1a1a;
+  background-color: #fa7e13;
 }
 
 .btn-group.open .btn-warning.dropdown-toggle {
@@ -6476,7 +6476,7 @@ div.subnav .nav > .active > a:hover {
   font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
-  background-color: #ff8200;
+  background-color: #fa3113;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -6489,11 +6489,11 @@ div.subnav .nav > .active > a:hover {
 .btn-anchor:hover .pop,
 .btn-anchor:active .pop,
 .btn-anchor:focus .pop {
-  background-color: #ff9629;
+  background-color: #fb543b;
 }
 
 .btn-anchor.disabled .pop {
-  background-color: #ff8200;
+  background-color: #fa3113;
 }
 
 .btn-anchor.btn-large {

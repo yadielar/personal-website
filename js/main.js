@@ -47,6 +47,19 @@ $(document).ready(function() {
 	    }
 	});
 
+
+	// Check for touch device then handle click event on projects
+	if(!!('ontouchstart' in window)){
+		$(".project .overlay").on("click", function(){
+			$(this).toggleClass("focused");
+		});
+	// otherwise handle mouseenter/mouseleave events
+	} else {
+		$(".project .overlay").on("mouseenter mouseleave", function(){
+			$(this).toggleClass("focused");
+		});
+	}
+
 });
 
 // Perform a smooth page scroll to an anchor on the same page
@@ -84,7 +97,7 @@ $(window).load(function() {
 	// Only load 3 portfolio items at a time
 	$("#portfolio img").hide();
 	$("#portfolio img").slice(0, 3).show();
-	
+
 	$("#portfolio #more").click(function(){
 		var showing = $("#portfolio img:visible").length;
 		$("#portfolio img").slice(showing - 1, showing + 3).fadeIn('fast');
@@ -97,5 +110,5 @@ $(window).load(function() {
 			}
 		});
 	});
-	
+
 });

@@ -9,7 +9,7 @@
 -------------------------------------------------- */
 
 body {
-    
+
 }
 
 /*
@@ -241,13 +241,6 @@ section {
         margin-bottom: 40px;
     }
 
-    img {
-        display: block; /* fixes annoying lazyload bug*/
-        margin-bottom: 60px;
-        border: 2px solid @portfolio-border;
-        border-radius: 10px;
-    }
-
     #more {
         cursor: pointer;
     }
@@ -257,6 +250,53 @@ section {
 
         p {
             margin: 0;
+        }
+    }
+
+    .project {
+
+        position: relative;
+        margin-bottom: 60px;
+
+        img {
+            display: block; /* fixes annoying lazyload bug*/
+            border-radius: 10px;
+            border: 2px solid @portfolio-border;
+        }
+
+        p {
+            font-style: normal;
+            color: #FFFFFF;
+            font-size: 18px;
+            margin: 33% 0 0;
+            padding: 0 35px;
+        }
+        .btn {
+            font-style: normal;
+            margin-top: 25px;
+            padding: 5px 10px;
+        }
+        .overlay {
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            border: 2px solid @portfolio-border;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all 0.5s ease;
+
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .overlay.focused {
+            opacity: 1;
         }
     }
 }
@@ -371,7 +411,7 @@ section {
 /* Desktop large
 ------------------------- */
 @media (min-width: 1200px) {
-    
+
 }
 
 /* Desktop
@@ -457,6 +497,13 @@ section {
         padding-top:    50px;
         padding-bottom: 50px;
     }
+    #portfolio {
+        .project {
+            p {
+                margin: 30% 0 0;
+            }
+        }
+    }
     #contact .social img {
         width: 76px;
         margin: 15px 12px;
@@ -503,6 +550,13 @@ section {
             margin-bottom: 20px;
         }
     }
+    #portfolio {
+        .project {
+            p {
+                margin: 24% 0 0;
+            }
+        }
+    }
     #contact .social img {
         width: 60px;
         margin: 15px 8px;
@@ -525,9 +579,17 @@ section {
     section .subsection-title {
         font-size: 44px;
     }
-    #portfolio img {
-        margin-bottom: 40px;
-        border-radius: 6px;
+    #portfolio {
+        .project {
+            img {
+                margin-bottom: 40px;
+                border-radius: 6px;
+            }
+            p {
+                margin: 21% 0 0;
+                font-size: 16px;
+            }
+        }
     }
     #contact .social img {
         width: 50px;
