@@ -254,6 +254,22 @@ section.inverted p {
   border-radius: 10px;
 }
 
+#portfolio .project .fa-link {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 5px 6px 6px 5px;
+  font-size: 18px;
+  color: #FF9C43;
+  background-color: #132537;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
 #portfolio .project p {
   padding: 0 35px;
   margin: 33% 0 0;
@@ -287,8 +303,21 @@ section.inverted p {
   -webkit-touch-callout: none;
 }
 
+#portfolio .project .overlay p,
+#portfolio .project .overlay .btn {
+  display: none;
+}
+
 #portfolio .project .overlay.focused {
   opacity: 1;
+}
+
+#portfolio .project .overlay.focused p {
+  display: block;
+}
+
+#portfolio .project .overlay.focused .btn {
+  display: inline-block;
 }
 
 #contact {
@@ -457,6 +486,9 @@ section.inverted p {
     margin-bottom: 20px;
     font-size: 43px;
   }
+  #portfolio .project .overlay {
+    right: -4px;
+  }
 }
 
 /* Tablet to desktop
@@ -484,6 +516,9 @@ section.inverted p {
   .navbar-static-top {
     margin-right: 0;
     margin-left: 0;
+  }
+  #portfolio .project .overlay {
+    right: 0;
   }
   #portfolio,
   #contact {
@@ -590,6 +625,10 @@ section.inverted p {
   #portfolio .project img {
     margin-bottom: 40px;
     border-radius: 6px;
+  }
+  #portfolio .project .fa-link {
+    bottom: 15px;
+    left: 15px;
   }
   #portfolio .project p {
     margin: 21% 0 0;
